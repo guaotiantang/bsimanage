@@ -1,0 +1,88 @@
+@import url("fonts.css?v=3");
+
+:root {
+    --border-color: rgba(207, 203, 203, 0.67);
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    height: 96vh;
+    width: 100vw;
+    max-width: 99vw;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-right: 6px;
+    height: 98vh;
+    align-content: center;
+}
+@font-face {
+    font-family: 'TypoGraphica';
+    src: url('/src/fonts/TypoGraphica.woff') format('woff');
+    font-display: block;
+}
+
+.title {
+    margin-left: 10px;
+    display: flex;
+    /*文本居中*/
+    justify-content: center;
+    align-items: center;
+    font-family: "TypoGraphica", "Arial Narrow", serif;
+    /*font-size: 1.3rem;*/
+    letter-spacing: 2px; /*字间距*/
+    background: linear-gradient(90deg, grey, cornflowerblue, coral, darkgoldenrod);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  /* 针对 Safari 的额外规则 */
+    color: transparent;  /* 针对非 Safari 浏览器 */
+    /*指定鼠标为手形*/
+    cursor: pointer;
+}
+
+.main-nav-theme {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.main_nav_collapse {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+
+.main-views {
+    width: 100%;
+    margin: 10px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main-views-head {
+    width: auto;
+    border-bottom: 1px solid var(--border-color);
+    justify-content: center;
+    display: flex;
+    font-size: 26px;
+    font-family: "TypoGraphica", sans-serif;
+    letter-spacing: 6px; /*字间距*/
+
+}
+
+.main-views-body {
+    width: 100%;
+    height: 98%;
+    overflow-x: auto;
+    overflow-y: auto;
+    position: relative;
+}

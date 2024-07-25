@@ -66,7 +66,6 @@ export const getData = async () => {
     total.value = response.total;
     tableData.value = response.data;
     fields.value = [];
-
     for (const field of response.fields) {
         const key = Object.keys(field)[0];
         fields.value.push(key)

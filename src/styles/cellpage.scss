@@ -1,0 +1,25 @@
+.main-cell-search {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.main-cell-foot {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+}
+
+.pagination-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.data-Table {
+  height: 100%;
+}

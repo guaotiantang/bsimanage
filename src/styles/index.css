@@ -54,29 +54,45 @@
 .main_nav_collapse {
     display: flex;
     justify-content: center;
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-    border-right: 1px solid var(--border-color);
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
 }
 
 .main-views {
     width: 100%;
     margin: 10px;
-    border: 1px solid var(--border-color);
+    border: 1px solid #eee;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
 .main-views-head {
-    width: auto;
-    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main-views-title {
+    width: calc(100% - 48px);
     justify-content: center;
     display: flex;
     font-size: 26px;
     font-family: "TypoGraphica", sans-serif;
     letter-spacing: 6px; /*字间距*/
+    height: 38px;
 
+
+}
+
+.main-views-user {
+    margin-top: 3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .main-views-body {

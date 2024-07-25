@@ -11,7 +11,7 @@ export default defineConfig({
   },
   define: {
     'process.env': {
-      VITE_API_URL: process.env.VUE_APP_API_URL
+      VITE_API_URL: process.env.VITE_API_URL
     }
   }
 })
